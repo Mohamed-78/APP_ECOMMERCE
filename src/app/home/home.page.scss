@@ -1,0 +1,215 @@
+*{
+  font-family: Montserrat, sans-serif;
+}
+.slide-text{
+  position: absolute;
+  color: white;
+  font-size: 35px;
+  margin-left:-0.5em;
+  text-align: left;
+  font-weight:bold;
+}
+
+.slide-sub-text{
+  position: absolute;
+  color: white;
+  margin-top: 9em;
+  margin-left:2.8em;
+  text-align: left;
+}
+
+ion-slides{
+  --margin:0px;
+}
+
+.slideBtn {
+  color:white;
+  --background:#d42027;
+  --border-radius: 20px;
+  font-size:11px;
+}
+
+.arrival-title{
+  display: flex;
+  justify-content: space-between;
+
+  .arrival{
+    margin-left: 0.9em;
+    padding-top: 0.5em;
+  }
+
+  .show{
+    margin-right: 0.8em;
+    padding-top: 0.5em;
+    font-weight:bold;
+    font-size:15px;
+  }
+}
+
+.position-title{
+  display: flex;
+  justify-content: space-between;
+
+ h5{
+    margin-left: 0.9em;
+    padding-top: 0.5em;
+  }
+
+  .see-more{
+    margin-right: 1em;
+    margin-top: 1.8em;
+    --color:#000000;
+    --border-radius: none;
+    font-size:12px;
+    --border-color:1px solid #000000;
+    text-transform: none;
+  }
+}
+
+
+.bg_1{
+  background: url(../../assets/img/banniere_home.jpg);
+  padding-bottom:3em;
+  border-radius: 10px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  --overflow:hidden;
+  overflow: auto;
+  --background: none;
+}
+
+.bg_2{
+  background: url(../../assets/img/banniere_home_2.jpg);
+  padding-bottom:3em;
+  border-radius: 10px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  --overflow:hidden;
+  overflow: auto;
+  --background: none;
+}
+
+.bg_3{
+  background: url(../../assets/img/banniere_home_3.jpg);
+  padding-bottom:3em;
+  border-radius: 10px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  --overflow:hidden;
+  overflow: auto;
+  --background: none;
+}
+
+ion-card{
+  margin: 0;
+  .title{
+    font-weight: bold;
+    margin-left:0.5em;
+    color:#000;
+  }
+
+  .sub_element{
+    display: flex;
+    justify-content:space-between;
+    line-height:-1.2em;
+    margin-bottom:0.3em;
+    color:#000;
+    line-height: 1.5em;
+  }
+
+  .price{
+    font-weight: bold;
+    margin-left:0.5em;
+    color:#000;
+  }
+
+  ion-icon{
+    font-weight: bold;
+    margin-right:0.5em;
+    color:#d42027;
+    font-size: 18px;
+  }
+}
+
+.cardTitle{
+  color: white;
+  margin-left: 1.5em;
+  font-weight:600;
+ // -webkit-text-stroke: 0.7px;
+  //-webkit-text-stroke-color: #d60;
+}
+
+.banniereBtn {
+  --color:white;
+  --background:#fff;
+  --background: linear-gradient(90deg, #d42027 0%, #3a3a3a 200%);
+  --border-radius: 20px;
+    margin-left: 15em;
+}
+
+.searchBar{
+  border: 1px solid white;
+  border-radius: 20px;
+  -webkit-appearance: none;
+  --background: transparent !important;
+  --color:white;
+}
+
+.category-slider{
+  ion-slide{
+    width: 150px;
+    height: 150px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    margin:0.3em;
+
+    ion-col{
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h5{
+        color: #ffff;
+        margin:0;
+      }
+
+      img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+        top:0;
+        //left: 0;
+        right: 0.4em;
+        z-index: -1;
+      }
+    }
+  }
+}
+
+.add-cart-btn {
+  --color:white;
+  --background:#000000;
+  --border-radius: 5px;
+  font-size:10.6px;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+ion-card-subtitle{
+  margin-left: 0.5em;
+  ion-icon{
+    font-size: 11px;
+    padding-top:0px;
+  }
+}

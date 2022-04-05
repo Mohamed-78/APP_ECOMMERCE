@@ -1,0 +1,157 @@
+<ion-content>
+  <ion-slides pager="true" [options]="slideOptsOne" #slideWithNav (ionSlideDidChange)="SlideDidChange(sliderOne,slideWithNav)">
+    <ion-slide routerLink="/home">
+      <ion-button fill="clear" class="back-btn" color="dark">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+      <img src="../../assets/img/s1.jpg">
+    </ion-slide>
+    <ion-slide routerLink="/home">
+      <ion-button fill="clear" class="back-btn" color="dark">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+      <img src="../../assets/img/s2.jpg">
+    </ion-slide>
+    <ion-slide routerLink="/home">
+      <ion-button fill="clear" class="back-btn" color="dark">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+      <img src="../../assets/img/s3.jpg">
+    </ion-slide>
+  </ion-slides>
+  <div class="detail-element-position">  
+    <h3 class="detail-title">Dark blue armchair</h3>
+    <ion-button fill="clear" color="dark"><ion-icon name="heart-outline"></ion-icon></ion-button>
+  </div>
+  <ion-card-subtitle class="star_position">
+    <ion-icon name="star" class="bgColor"></ion-icon>
+    <ion-icon name="star" class="bgColor"></ion-icon>
+    <ion-icon name="star" class="bgColor"></ion-icon>
+    <ion-icon name="star-outline"></ion-icon>
+    <ion-icon name="star-outline"></ion-icon>
+  </ion-card-subtitle>
+  <div class="price-with-btn">
+    <h4 class="price">$15000</h4>
+    <ion-button size="small" class="add-cart">ADD TO CART</ion-button>
+  </div>
+  <hr>
+  <h4 class="color-title">Colors</h4>
+   <div class="color-position">
+    <ion-checkbox color="dark" checked="checked" mode="ios"></ion-checkbox>
+    <ion-checkbox mode="ios" class="ion-checkbox_1"></ion-checkbox>
+    <ion-checkbox mode="ios" class="ion-checkbox_2"></ion-checkbox>
+    <ion-checkbox mode="ios" class="ion-checkbox_3"></ion-checkbox>
+    <ion-checkbox mode="ios" class="ion-checkbox_4"></ion-checkbox>
+    <ion-checkbox mode="ios" class="ion-checkbox_5"></ion-checkbox>
+  </div>
+  <hr>
+  <h4 class="description">Description</h4>
+  <ion-card-content>
+    <p>
+     Lorem ipsum sed velit dolore dolore nulla elit magna sit
+     sit proident non cupidatat occaecat consequat
+     esse non ut sint occaecat est aliquip eiusmod
+     pariatur commodo irure non laboris magna dolore
+     exercitation tempor do tempor incididunt adipisicing
+     esse duis sed laborum amet magna non cillum incididunt
+   </p>
+ </ion-card-content>
+ <hr>
+ <div class="ion-padding reviews-position">
+   <h4>Reviews</h4>
+   <h6>15 reviews</h6>
+ </div>
+  <div class="ion-padding stat-reviews-position">
+     <ion-card>
+       <h2>4.8</h2>
+       <h6>out of 5</h6>
+     </ion-card>
+     <div class="text-reviews">
+        <div class="ex-position">
+          <h6>Excellent</h6>
+          <ion-progress-bar value="0.8"></ion-progress-bar>
+        </div>
+        <div class="ex-position"> 
+          <h6 class="title_2">Very Good</h6>
+          <ion-progress-bar value="0.5" class="progress_2"></ion-progress-bar>
+        </div>
+        <div class="ex-position">
+          <h6 class="title_3">Average</h6>
+          <ion-progress-bar value="0.2" class="progress_3"></ion-progress-bar>
+        </div>
+     </div>
+  </div>
+  <div class="sub-detail">
+    <ion-card-subtitle class="star_position">
+      <ion-icon name="star" class="bgColor"></ion-icon>
+      <ion-icon name="star" class="bgColor"></ion-icon>
+      <ion-icon name="star" class="bgColor"></ion-icon>
+      <ion-icon name="star-outline"></ion-icon>
+      <ion-icon name="star-outline"></ion-icon>
+    </ion-card-subtitle>
+    <h6 routerLink="/reviews"><u>Add a comment</u></h6>
+  </div>
+  <hr>
+ <h3 class="other-product">You may also like</h3>
+ <div class="category-slider">
+  <ion-slides [options]="{slidesPerView :'auto',zomm: false, grabCursor:true}">
+    <ion-slide>
+      <ion-col>
+        <ion-card>
+          <img src="../../assets/img/detail_1.jpg" alt="" routerLink="/about">
+          <span class="title">Qwer Armchair</span>
+          <ion-card-subtitle>
+            <ion-icon name="star" class="bgColor"></ion-icon>
+            <ion-icon name="star" class="bgColor"></ion-icon>
+            <ion-icon name="star" class="bgColor"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+          </ion-card-subtitle>
+          <div class="sub_element">
+            <span class="price">$25000</span>
+            <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+          </div>
+        </ion-card>
+      </ion-col>
+    </ion-slide>
+    <ion-slide>
+      <ion-col>
+        <ion-card>
+          <img src="../../assets/img/detail_2.jpg" alt="" routerLink="/about">
+          <span class="title">Zes Armchair</span>
+          <ion-card-subtitle>
+            <ion-icon name="star" class="bgColor"></ion-icon>
+            <ion-icon name="star" class="bgColor"></ion-icon>
+            <ion-icon name="star" class="bgColor"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+          </ion-card-subtitle>
+          <div class="sub_element">
+            <span class="price">$55000</span>
+            <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+          </div>
+        </ion-card>
+      </ion-col>
+    </ion-slide>
+    <ion-slide>
+      <ion-col>
+        <ion-card>
+          <img src="../../assets/img/detail_3.jpg">
+          <span class="title">Yerd Armchair</span>
+          <ion-card-subtitle>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+          </ion-card-subtitle>
+          <div class="sub_element">
+            <span class="price">$15000</span>
+            <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+          </div>
+        </ion-card>
+      </ion-col>
+    </ion-slide>
+  </ion-slides>
+</div>
+</ion-content>

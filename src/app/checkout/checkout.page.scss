@@ -1,0 +1,129 @@
+*{
+  font-family: Montserrat, sans-serif;
+}
+
+ion-header{
+  ion-toolbar{
+    height: 4.5em;
+
+    .title-position{
+      display:flex;
+      justify-content:space-between;
+    }
+
+    ion-icon{
+      font-weight:bold;
+      font-size: 23px;
+    }
+
+    ion-icon.search{
+      visibility: hidden;
+    }
+  }
+
+  h4{
+    margin-top: -1em;
+    font-weight:bold;
+  }
+
+  hr{
+    width: 100%;
+    background: #e2e2e2;
+    margin-top:0.5em;
+  }
+
+}
+
+ion-content{
+  h4{
+    margin-top:-0.5em;
+  }
+  h3{
+    font-size:19px;
+  }
+  .shipping-position{
+    display:flex;
+    justify-content:space-between;
+
+    h5{
+      color:#000000;
+      margin-top:1.2em;
+      margin-right:2.5em;
+    }
+
+    ion-icon{
+      font-size:30px;
+      margin-top:0.5em;
+      margin-left: 0.5em;
+    }
+
+    ion-checkbox{
+      margin-top:1.3em;
+      margin-right: 2.5em;
+    }
+  }
+
+  ion-card{
+    background:#f9f9f9;
+    margin-top:-0.5em;
+    border-radius: 10px;
+  }
+
+  hr{
+    width: 100%;
+    background: #e2e2e2;
+    margin-top:2em;
+  }
+
+  .pay-position{
+    display:flex;
+    justify-content:space-between;
+
+    img{
+      width:100px;
+      margin-top:1em;
+    }
+
+    h6{
+      color:#000000;
+      margin-top:2em;
+      margin-right:4.5em;
+    }
+
+    ion-checkbox{
+      margin-top:1.8em;
+      margin-right: 2.5em;
+    }
+  }
+
+  .total-position{
+    display:flex;
+    justify-content:space-between;
+
+    h6{
+      margin-top:1.2em;
+    }
+  }
+
+  .container-form-btn {
+    display: flex;
+    justify-content: center;
+    margin-top:2em !important;   
+
+    .form-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+      min-width: 380px;
+      height: 48px;
+      background-color: #000000;
+      border-radius: none;
+      font-size: 14px;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      padding-top: 5px;
+      transition: all 0.4s;
+    }
+  }
+}

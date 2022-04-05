@@ -1,0 +1,40 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+  <ion-icon name="arrow-back" color="dark" routerLink="/welcome"></ion-icon>
+   <div class="ion-padding flex-element">
+     <h1><b>Login</b></h1>
+   </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ <div class="position ion-padding">
+
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="email"></ion-input>
+    </ion-item>
+
+    <ion-item class="item-position">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+
+    <div class="container-form-btn">
+      <button class="form-btn custom-font" routerLink="/home">
+        <b>LOGIN</b>
+      </button>
+    </div>
+
+    <h5 class="forgot-password" routerLink="/forgot-password">Forgot your password?</h5>
+
+    <div class="container-form-btn-fb">
+      <button class="form-btnFb">
+        <b>LOGIN WITH FACEBOOK</b>
+      </button>
+    </div>
+
+    <h5 class="sign-up" routerLink="/register">Don't have an account? Sign Up </h5>
+
+ </div>
+</ion-content>

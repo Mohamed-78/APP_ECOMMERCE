@@ -1,0 +1,178 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div class="title-position">
+      <ion-button fill="clear" [routerLink]="['/categories']" *ngIf="!toggled">
+        <ion-icon name="arrow-back" color="dark"></ion-icon>
+      </ion-button>
+      <h5 *ngIf="!toggled">Decoration</h5>
+      <ion-button fill="clear" color="dark" *ngIf="!toggled" (click)="toggle()">
+        <ion-icon name="search" class="search"></ion-icon>
+      </ion-button>
+      <ion-searchbar placeholder="Search here" 
+      (ionIput)="searchThis($event)" (ionCancel)="cancelSearch($event)" 
+      [showCancelButton]="true" *ngIf="toggled" mode="ios"  cancelButtonText="Close">
+      </ion-searchbar>
+    </div>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="ion-padding">
+    <ion-segment (ionChange)="segmentChanged($event)" scrollable="true" class="segment" value="featured">
+      <ion-segment-button value="featured">Featured</ion-segment-button>
+      <ion-segment-button value="collection">Collection</ion-segment-button>
+      <ion-segment-button value="trend">Trend</ion-segment-button>
+    </ion-segment>
+    <div *ngIf="selectedSegmentFeatured=='featured'">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-card>
+              <div class="heart-icon">
+                <ion-icon name="heart" color="dark"></ion-icon>
+              </div>
+              <img src="../../assets/img/deco_1.jpg">
+              <h6>Georg Jensen Minimal</h6>
+              <h5 class="sub_text">$29.00</h5>
+            </ion-card>
+          </ion-col>
+          <ion-col>
+            <ion-card>
+              <div class="heart-icon">
+                <ion-icon name="heart-outline" color="dark"></ion-icon>
+              </div>
+              <img src="../../assets/img/deco_2.jpg">
+              <h6>Teapot with black tea</h6>
+              <h5 class="sub_text">$29.00</h5>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-grid class="grid-top">
+        <ion-row>
+          <ion-col>
+            <ion-card>
+              <div class="heart-icon">
+                <ion-icon name="heart" color="dark"></ion-icon>
+              </div>
+              <img src="../../assets/img/deco_3.jpg">
+              <h6>Pearl Beading Textured Faux Fur</h6>
+              <h5 class="sub_text">$29.00</h5>
+            </ion-card>
+          </ion-col>
+          <ion-col>
+            <ion-card>
+              <div class="heart-icon">
+                <ion-icon name="heart-outline" color="dark"></ion-icon>
+              </div>
+              <img src="../../assets/img/deco_4.jpg">
+              <h6>Atelier Ottoman Takumi Series</h6>
+              <h5 class="sub_text">$29.00</h5>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <div *ngIf="selectedSegmentFeatured !='featured'">  
+      <div *ngIf="selectedSegmentCollection=='collection'">
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-card>
+                <div class="heart-icon">
+                  <ion-icon name="heart" color="dark"></ion-icon>
+                </div>
+                <img src="../../assets/img/deco_5.jpg">
+                <h6>Georg Jensen Minimal</h6>
+                <h5 class="sub_text">$29.00</h5>
+              </ion-card>
+            </ion-col>
+            <ion-col>
+              <ion-card>
+                <div class="heart-icon">
+                  <ion-icon name="heart-outline" color="dark"></ion-icon>
+                </div>
+                <img src="../../assets/img/deco_6.jpg">
+                <h6>Teapot with black tea</h6>
+                <h5 class="sub_text">$29.00</h5>
+              </ion-card>
+            </ion-col>
+          </ion-row>
+      </ion-grid>
+      <ion-grid class="grid-top">
+        <ion-row>
+          <ion-col>
+            <ion-card>
+              <div class="heart-icon">
+                <ion-icon name="heart" color="dark"></ion-icon>
+              </div>
+              <img src="../../assets/img/deco_7.jpg">
+              <h6>Pearl Beading Textured Faux Fur</h6>
+              <h5 class="sub_text">$29.00</h5>
+            </ion-card>
+          </ion-col>
+          <ion-col>
+            <ion-card>
+              <div class="heart-icon">
+                <ion-icon name="heart-outline" color="dark"></ion-icon>
+              </div>
+              <img src="../../assets/img/deco_8.jpg">
+              <h6>Atelier Ottoman Takumi Series</h6>
+              <h5 class="sub_text">$29.00</h5>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      </div>
+      <div *ngIf="selectedSegmentTrend=='trend'">
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-card>
+                <div class="heart-icon">
+                  <ion-icon name="heart" color="dark"></ion-icon>
+                </div>
+                <img src="../../assets/img/deco_7.jpg">
+                <h6>Georg Jensen Minimal</h6>
+                <h5 class="sub_text">$29.00</h5>
+              </ion-card>
+            </ion-col>
+            <ion-col>
+              <ion-card>
+                <div class="heart-icon">
+                  <ion-icon name="heart-outline" color="dark"></ion-icon>
+                </div>
+                <img src="../../assets/img/deco_8.jpg">
+                <h6>Teapot with black tea</h6>
+                <h5 class="sub_text">$29.00</h5>
+              </ion-card>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        <ion-grid class="grid-top">
+          <ion-row>
+            <ion-col>
+              <ion-card>
+                <div class="heart-icon">
+                  <ion-icon name="heart" color="dark"></ion-icon>
+                </div>
+                <img src="../../assets/img/deco_5.jpg">
+                <h6>Pearl Beading Textured Faux Fur</h6>
+                <h5 class="sub_text">$29.00</h5>
+              </ion-card>
+            </ion-col>
+            <ion-col>
+              <ion-card>
+                <div class="heart-icon">
+                  <ion-icon name="heart-outline" color="dark"></ion-icon>
+                </div>
+                <img src="../../assets/img/deco_6.jpg">
+                <h6>Atelier Ottoman Takumi Series</h6>
+                <h5 class="sub_text">$29.00</h5>
+              </ion-card>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,70 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div class="title-position">
+      <ion-button fill="clear" [routerLink]="['/home']">
+        <ion-icon name="arrow-back" color="dark"></ion-icon>
+      </ion-button>
+      <ion-button fill="clear">
+        <ion-icon name="search" class="search"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-toolbar>
+  <div class="ion-padding">
+    <h4>Checkout</h4>
+  </div>
+  <hr>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <h4>Shipping to</h4>
+  </div>
+  <ion-card>
+    <div class="shipping-position">
+      <ion-icon name="home" color="primary"></ion-icon>
+      <h5>658 Yost Island Apt</h5>
+      <ion-checkbox mode="ios" checked="checked"></ion-checkbox>
+    </div>
+  </ion-card>
+  <div class="ion-padding">
+    <h3>Payement method</h3>
+  </div>
+  <ion-card>
+    <div class="pay-position">
+      <img src="../../assets/img/visa.png">
+      <h6><b>*** *** *** 3765</b></h6>
+      <ion-checkbox mode="ios" checked="checked"></ion-checkbox>
+    </div>
+    <div class="pay-position">
+      <img src="../../assets/img/paypal.png">
+      <h6><b>pfefer@balisti.net</b></h6>
+      <ion-checkbox mode="ios"></ion-checkbox>
+    </div>
+    <div class="pay-position">
+      <img src="../../assets/img/master.png">
+      <h6><b>*** *** *** 3010</b></h6>
+      <ion-checkbox mode="ios"></ion-checkbox>
+    </div>
+  </ion-card>
+  <hr>
+  <div class="ion-padding">
+    <div class="total-position">
+      <h5>Shipping free</h5>
+      <h6>$6.99</h6>
+    </div>
+    <div class="total-position">
+      <h5>Sub total</h5>
+      <h6>$77.99</h6>
+    </div>
+    <div class="total-position">
+      <h5><b>Total</b></h5>
+      <h6><b>$90.99</b></h6>
+    </div>
+
+    <div class="container-form-btn">
+      <button class="form-btn custom-font" (click)="thankYou()">
+        <b>PAYEMENT</b>
+      </button>
+    </div>
+  </div>
+</ion-content>

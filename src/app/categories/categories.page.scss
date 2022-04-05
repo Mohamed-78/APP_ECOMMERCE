@@ -1,0 +1,80 @@
+*{
+  font-family: Montserrat, sans-serif;
+}
+
+ion-header{
+  ion-toolbar{
+      height: 4.5em;
+      h5{
+        color: #000000;
+        font-weight: bold;      }
+
+      .title-position{
+        display:flex;
+        justify-content:space-between;
+      }
+
+      ion-icon{
+        font-weight:bold;
+        font-size: 23px;
+      }
+
+      ion-icon.search{
+        visibility: hidden;
+      }
+
+    hr{
+      width: 100%;
+      background: #e2e2e2;
+      margin-top:0.8em;
+    }
+  }
+
+}
+
+ion-content{
+    .box{
+
+      ion-card{
+      border-radius:none;
+      box-shadow: none;
+    }
+
+    hr{
+      width: 90%;
+      background: #e2e2e2;
+      margin-top:0.8em;
+    }
+
+    .category-position{
+      display:flex;
+      justify-content:space-evently;
+
+      img{
+        border-radius:10px;
+        height:120px;
+      }
+
+      h4{
+        color:#000000;
+        font-weight:bold;
+        font-size:18px;
+        margin-left:0.8em;
+      }
+    }
+
+    .items-position{
+      display:flex;
+      justify-content:space-between;
+      margin-top: -6.6em;
+
+      h6{
+        margin-left:7em;
+      }
+
+      .item-btn{
+        margin-top:1em;
+      }
+    }
+  }
+}

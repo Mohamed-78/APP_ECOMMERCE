@@ -1,0 +1,138 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div class="header-position">
+      <ion-menu-button  fill="clear" color="dark" *ngIf="!toggled">
+        <img src="../../assets/menu_bar.svg">
+      </ion-menu-button > 
+      <ion-button fill="clear"  color="dark"  *ngIf="!toggled" (click)="toggle()">
+        <ion-icon name="search-outline"></ion-icon>
+      </ion-button>
+      <ion-searchbar placeholder="Search here a product" 
+      (ionIput)="searchThis($event)" (ionCancel)="cancelSearch($event)" 
+      [showCancelButton]="true" *ngIf="toggled" mode="ios" cancelButtonText="Close">
+      </ion-searchbar>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <h3>Discover</h3>
+  </div>
+  <div class="category-slider ion-padding-start">
+    <ion-slides [options]="{slidesPerView :'auto',zomm: false, grabCursor:true}">
+      <ion-slide>
+        <ion-col>
+          <h4>New Arrivals Winter</h4>
+          <img src="../../assets/img/cat1.jpg">
+        </ion-col>
+      </ion-slide>
+      <ion-slide>
+        <ion-col>
+          <h4>Table Wood</h4>
+          <img src="../../assets/img/cat2.jpg">
+        </ion-col>
+      </ion-slide>
+      <ion-slide>
+        <ion-col>
+          <h4>Sofa</h4>
+          <img src="../../assets/img/cat3.jpg">
+        </ion-col>
+      </ion-slide>
+      <ion-slide>
+        <ion-col>
+          <h4>Other chair</h4>
+          <img src="../../assets/img/cat4.jpg">
+        </ion-col>
+      </ion-slide>
+      <ion-slide>
+        <ion-col>
+          <h4>Armchair</h4>
+          <img src="../../assets/img/cat6.jpg">
+        </ion-col>
+      </ion-slide>
+    </ion-slides>
+  </div>
+  <div class="selling-title">
+    <h5 class="selling"><b>Best Selling</b></h5>
+    <h6 class="show" routerLink="/show-all">Show all</h6>
+  </div>
+  <div class="box">
+    <ion-card>
+      <div class="selling-position">
+        <img src="../../assets/img/h1.jpg">
+        <h4>Ruffe Trim Spot Wrap Dress</h4>
+      </div>
+      <div class="shop-position ion-padding">
+        <h6>$29.00</h6>
+        <ion-button size="small" class="shop-btn">Shop</ion-button>
+      </div>
+    </ion-card>
+    <hr>
+  </div>
+  <div class="box">
+    <ion-card>
+      <div class="selling-position">
+        <img src="../../assets/img/detail_2.jpg">
+        <h4>Leaf Floral Print Random wr</h4>
+      </div>
+      <div class="shop-position ion-padding">
+        <h6>$29.00</h6>
+        <ion-button size="small" class="shop-btn">Shop</ion-button>
+      </div>
+    </ion-card>
+    <hr>
+  </div>
+  <div class="box">
+    <ion-card>
+      <div class="selling-position">
+        <img src="../../assets/img/detail_1.jpg">
+        <h4>Drop Shoulder Geo Patterns</h4>
+      </div>
+      <div class="shop-position ion-padding">
+        <h6>$29.00</h6>
+        <ion-button size="small" class="shop-btn">Shop</ion-button>
+      </div>
+    </ion-card>
+    <hr>
+  </div>
+  <div class="box">
+    <ion-card>
+      <div class="selling-position">
+        <img src="../../assets/img/h4.jpg">
+        <h4>Drop Shoulder Geo Patterns</h4>
+      </div>
+      <div class="shop-position ion-padding">
+        <h6>$29.00</h6>
+        <ion-button size="small" class="shop-btn">Shop</ion-button>
+      </div>
+    </ion-card>
+    <hr>
+  </div>
+  <div class="box">
+    <ion-card>
+      <div class="selling-position">
+        <img src="../../assets/img/h5.jpg">
+        <h4>Drop Shoulder Geo Patterns</h4>
+      </div>
+      <div class="shop-position ion-padding">
+        <h6>$29.00</h6>
+        <ion-button size="small" class="shop-btn">Shop</ion-button>
+      </div>
+    </ion-card>
+    <hr>
+  </div>
+  <div class="box">
+    <ion-card>
+      <div class="selling-position">
+        <img src="../../assets/img/h3.jpg">
+        <h4>Drop Shoulder Geo Patterns</h4>
+      </div>
+      <div class="shop-position ion-padding">
+        <h6>$29.00</h6>
+        <ion-button size="small" class="shop-btn">Shop</ion-button>
+      </div>
+    </ion-card>
+    <hr>
+  </div>
+</ion-content>

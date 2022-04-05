@@ -1,0 +1,95 @@
+*{
+  font-family: Montserrat, sans-serif;
+}
+
+ion-header{
+  ion-toolbar{
+    .btn-position{
+      display:flex;
+      justify-content:space-between;
+    }
+
+    ion-button{
+      ion-icon{
+        font-size:25px;
+      }
+    }
+  }
+}
+
+ion-content{
+
+  h2{
+    font-size:28px;
+    margin-top:-0.5em;
+  }
+
+  h6{
+    color:grey;
+    margin-top:0.5em;
+  }
+
+  .commentaire{
+    margin-top:1em;
+    display:flex;
+    justify-content:flex-start;
+
+    img{
+      border-radius:50px;
+      width:40px;
+      height:40px;
+    }
+
+    p{
+      margin-top:0.3em;
+      margin-left:0.5em;
+      font-family: Montserrat, sans-serif;
+      font-size: 15px;
+    }
+  }
+
+  .time{
+    display:flex;
+    justify-content:flex-end;
+    margin-top:-0.8em;
+  }
+
+  hr{
+    width: 100%;
+    background: #e2e2e2;
+    margin-top:0.5em;
+  }
+
+  .submit_avis{
+    margin-top:2em;
+    display:flex;
+    justify-content:space-between;
+    //background:#f3f3f3;
+
+    img{
+      border-radius:50px;
+      width:30px;
+      height:30px;
+    }
+
+    input {
+      min-width: 305px;
+      height: 38px;
+      border: 1px solid #e2e2e2;
+      font-size: 15px;
+      border-radius:20px;
+      color: #000;
+      padding: 1em;
+    }
+
+    input:focus{
+      outline: 1px solid #0394DD;
+    }
+
+    ion-icon{
+     color: #0394DD;
+     font-size:25px;
+     margin-top:0.2em;
+   }
+ }
+}

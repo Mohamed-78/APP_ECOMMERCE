@@ -1,0 +1,51 @@
+*{
+	font-family: Montserrat, sans-serif;
+}
+
+ion-content{
+	ion-icon{
+		font-size: 30px;
+	}
+
+	img{
+		margin-top: 5em;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 150px;
+	}
+
+	h2{
+		margin-top:2em;
+	}
+
+	h6{
+		color: grey;
+
+		b{
+			color:#000000;
+		}
+	}
+
+	.container-form-btn {
+		display: flex;
+		justify-content: center;
+		margin-top:5em !important;   
+
+		.form-btn {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 0 20px;
+			min-width: 340px;
+			height: 48px;
+			background-color: #000000;
+			border-radius: none;
+			font-size: 14px;
+			color: #FFFFFF;
+			text-transform: uppercase;
+			padding-top: 5px;
+			transition: all 0.4s;
+		}
+	}
+}

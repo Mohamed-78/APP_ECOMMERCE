@@ -1,0 +1,70 @@
+<ion-app>
+  <ion-menu contentId="main" menuId="main-menu">
+    <ion-content>
+      <div class="menu-header-bg"></div>
+      <div class="header-content">
+        <ion-icon name="close" (click)="close()"></ion-icon>
+      </div>
+      <ion-list lines="none" class="menu-item">
+          <div class="user_connect">
+            <img src="../../assets/img/profil.JPG">&nbsp;&nbsp;
+            <h5>mdev@gmail.com</h5>
+          </div>
+        <ion-menu-toggle auto-hide="false">
+          <ion-item lines="none" (click)="navigate('/sortie', 1)" detail="false"
+            [class.selected]="selectedIndex == 1">
+            <ion-icon name="home"></ion-icon>Back To Home
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle auto-hide="false">
+          <ion-item lines="none" (click)="navigate('/hebergement', 2)" detail="false"
+            [class.selected]="selectedIndex == 2">
+            <ion-icon name="bag-outline" class="iconColor"></ion-icon>New Collections
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle auto-hide="false">
+          <ion-item lines="none" (click)="navigate('/shopping', 3)" detail="false"
+            [class.selected]="selectedIndex == 3">
+            <ion-icon name="flag-outline"></ion-icon>Editor's Picks
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle auto-hide="false">
+          <ion-item lines="none" (click)="navigate('/resto', 4)" detail="false"
+            [class.selected]="selectedIndex == 4">
+            <ion-icon name="pricetag-outline"></ion-icon>Top Deals
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle auto-hide="false">
+          <ion-item lines="none" (click)="navigate('/event', 5)" detail="false"
+            [class.selected]="selectedIndex == 5">
+            <ion-icon name="notifications-outline"></ion-icon>Notifications
+          </ion-item>
+        </ion-menu-toggle>
+            <ion-menu-toggle auto-hide="false">
+          <ion-item lines="none" (click)="navigate('/administration',6)" detail="false"
+            [class.selected]="selectedIndex == 6">
+            <ion-icon name="settings-outline"></ion-icon>Settings
+          </ion-item>
+        </ion-menu-toggle>
+            <ion-menu-toggle auto-hide="false">
+          <ion-item lines="none" (click)="navigate('/tabs/tab3', 7)" detail="false"
+            [class.selected]="selectedIndex == 7">
+            <ion-icon name="help-circle-outline"></ion-icon>Support
+          </ion-item>
+        </ion-menu-toggle>
+            <ion-menu-toggle auto-hide="false">
+          <ion-item lines="none" (click)="navigate('/tabs/tab3')" detail="false"
+            [class.selected]="selectedIndex == 5">
+            <ion-icon name="call-outline"></ion-icon>Call center
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle auto-hide="false">
+          <ion-item style="padding-top: 2em;" (click)="logout()">
+            <ion-icon name="log-out-outline"></ion-icon>Logout
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>

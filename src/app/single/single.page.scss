@@ -1,0 +1,357 @@
+*{
+  font-family: Montserrat, sans-serif;
+}
+
+.price{
+  color: #2a2a2a;
+  margin-left: 20px;
+}
+
+/* .bg{
+  background:#f9f9f9;
+} */
+
+.stat-reviews-position{
+  display:flex;
+  justify-content:space-between;
+  margin-top: -2em;
+
+  ion-card{
+    width:100px;
+    height:100px;
+    background:#2f7aff;
+    margin-left:-0.1em;
+
+    h2{
+      text-align:center;
+      color:#ffffff;
+      font-size:30px;
+    }
+
+    h6{
+      text-align:center;
+      color:#ffffff;
+    }
+  }
+
+  .text-reviews{
+    margin-right:2em;
+    h6{
+      color:grey;
+    }
+  }
+}
+
+.sub-detail{
+  display:flex;
+  justify-content:space-between;
+
+  h6{
+    color:#2f7aff;
+    margin-top:-0.2em;
+    margin-right:2em;
+  }
+}
+
+.ex-position{
+  display:flex;
+  justify-content: space-around;
+
+  ion-progress-bar{
+    margin-top: 1.5em;
+    margin-left:1em;
+    width:130px;
+    height:7px;
+    border-radius:10px;
+  }
+
+  .title_2{
+    margin-top:0.3em;
+  }
+
+  .progress_2{
+    margin-top:0.7em;
+  }
+
+  .title_3{
+    margin-top:0.3em;
+  }
+
+  .progress_3{
+    margin-top:0.7em;
+  }
+}
+
+.reviews-position{
+  display:flex;
+  justify-content:space-between;
+  margin-top: -1.5em;
+
+  h6{
+    margin-top: 1.2em;
+  }
+}
+
+.back-btn{
+ position:absolute;
+ z-index:1;
+ left: -0.3em;
+ margin-top: -15em;
+}
+
+.color-title{
+  margin-left: 1em;
+}
+
+hr{
+  width: 100%;
+  background: #e2e2e2;
+  margin-top:0.8em;
+}
+
+.color-position{
+  display:flex;
+  justify-content:space-around;
+
+  ion-checkbox{
+    --size:40px;
+  }
+
+  .ion-checkbox_1{
+    --background:#307aff;
+    --background-checked:#307aff;
+  }
+
+  .ion-checkbox_2{
+    --background:#deb894;
+    --background-checked:#deb894; 
+  }
+
+  .ion-checkbox_3{
+    --background:#f52c56;
+    --background-checked:#f52c56; 
+  }
+
+  .ion-checkbox_4{
+    --background:#5754d5;
+    --background-checked:#5754d5; 
+  }
+
+  .ion-checkbox_5{
+    --background:#e6e5eb;
+    --background-checked:#e6e5eb;  
+  }
+
+}
+
+
+.detail-element-position{
+  display:flex;
+  justify-content:space-between;
+
+  .detail-title{
+    margin-left: 1em;
+  }
+
+  ion-icon{
+    font-size:25px;
+    margin-top:0.6em;
+    margin-right: 0.7em;
+  }
+}
+
+.price-with-btn{
+  display: flex;
+  justify-content:space-between;
+}
+
+.description{
+  margin-left: 1em;
+  color:#d42027
+}
+
+ion-card-content{
+  p{
+    text-align: justify;
+  }
+}
+
+.other-product{
+  margin-left: 1em;
+}
+
+.add-cart {
+  --color:white;
+  --background:#d42027;
+  //--background: linear-gradient(90deg, #d42027 0%, #3a3a3a 200%);
+  --border-radius: 10px;
+  height: 30px;
+  margin-right: 2.5em !important;
+  margin-top: 1em;
+}
+
+.star_position{
+  margin-left: 1.3em;
+  font-size:large;
+  padding:0px;
+}
+
+.bgColor {
+  color: #fec72f;
+}
+
+.seperator{
+  hr {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: #e2e2e2;
+  }
+}
+
+.category-slider{
+  ion-slide{
+    width: 190px;
+    margin-right: 50em;
+    margin-bottom: 30px;
+    margin:-0.4em -0.5em;
+  }
+}
+
+ion-card{
+  border-radius:8px;
+}
+
+.bgColor{
+  color:#fec72f;
+}
+
+span{
+  top: 2em !important;
+}
+
+ion-card{
+  --border-radius: 10px;
+  .title{
+    font-weight: bold;
+    margin-right: 3em !important;
+    color:#000;
+  }
+
+  .sub_element{
+    display: flex;
+    justify-content:space-between;
+    line-height:-1.2em;
+    margin-bottom:0.3em;
+    color:#000;
+  }
+
+  .price{
+    font-weight: bold;
+    margin-left:0.5em;
+    color:#000;
+    margin-top:0.5em;
+  }
+
+  ion-icon{
+    font-weight: bold;
+    margin-right:0.5em;
+    color:#d42027;
+    font-size: 18px;
+    margin-top: 0.2em;
+  }
+
+
+  ion-card-subtitle{
+    padding-top:0px;
+    margin-right: 4.5em;
+    ion-icon{
+      font-size: 11px;
+    }
+  }
+
+}
+.title_category{
+  font-weight: bold;
+  color:gray;
+  display: flex;
+  justify-content:start;
+  margin-left: 0.5em;
+  padding-bottom: 0px;
+}
+ion-card-subtitle{
+  padding-top:1.3em;
+}
+
+.variation {
+  padding-top: 16px;
+
+  ion-segment-button {
+    color: #2a2a2a;
+  }
+}
+
+.variation-selector {
+  margin-top: 30px;
+  display: flex;
+  position: relative;
+
+  .active-variation {
+    opacity: 1 !important;
+    z-index: 1 !important;
+  }
+
+  .sizes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    z-index: 0;
+    padding-bottom: 30px;
+
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f3f3f3;
+      width: 50px;
+      height: 50px;
+      margin-right: 8px;
+      transition: 0.5s ease-in-out;
+    }
+
+    .active {
+      color: #ffffff;
+      background-color: var(--ion-color-primary);
+    }
+  }
+
+  .colors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    z-index: 0;
+    padding-bottom: 30px;
+
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f3f3f3;
+      width: 70px;
+      height: 50px;
+      margin-right: 8px;
+      transition: 0.5s ease-in-out;
+    }
+
+    .active {
+      color: #ffffff;
+      background-color: var(--ion-color-primary);
+    }
+  }
+}

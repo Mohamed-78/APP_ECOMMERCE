@@ -1,0 +1,99 @@
+ion-content{
+   --overflow:hidden;
+   overflow: auto;
+   --background: none;
+   background: url(../../assets/img/1.jpg);
+   background-position: center top;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+  .container-form-btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top:35em;   
+
+    .form-btn-register {
+      padding: 0 20px;
+      min-width: 160px;
+      height: 45px;
+      background-color:#000000;
+      border-radius: none;
+      font-size: 14px;
+      color: #FFFFFF;
+      padding-top: 5px;
+      transition: all 0.4s;
+    }
+
+    .form-btn-login {
+      padding: 0 20px;
+      min-width: 160px;
+      height: 45px;
+      border-radius: none;
+      font-size: 14px;
+      color: #000000;
+      padding-top: 5px;
+      transition: all 0.4s;
+    }
+
+    ion-icon{
+      font-size:25px;
+    }
+
+  }
+}
+
+@media screen and (min-width: 375px) {
+  
+  .container-form-btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top:45em !important;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  
+  .container-form-btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top:40em !important;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  
+  .container-form-btn {
+    margin-top:50em !important;
+  }
+
+  .form-btn-register {
+    min-width: 200px !important;
+  }
+
+  .form-btn-login {
+    min-width: 200px !important;
+  }
+}
+
+/* @media screen and (min-width: 320px) {
+  
+  .container-form-btn {
+    display: flex;
+    justify-content: center !important;
+    margin-top:30em !important;
+  }
+
+  .form-btn-register {
+    margin: 0 10px !important;
+    min-width: 135px !important;
+    height: 45px;
+  }
+
+  .form-btn-login {
+    margin: 0 10px !important;
+    min-width: 135px !important;
+    height: 45px;
+  }
+} */
+
+ 
