@@ -11,13 +11,13 @@
             <h5>mdev@gmail.com</h5>
           </div>
         <ion-menu-toggle auto-hide="false">
-          <ion-item lines="none" (click)="navigate('/sortie', 1)" detail="false"
+          <ion-item lines="none" (click)="navigate('/home', 1)" detail="false"
             [class.selected]="selectedIndex == 1">
             <ion-icon name="home"></ion-icon>Back To Home
           </ion-item>
         </ion-menu-toggle>
         <ion-menu-toggle auto-hide="false">
-          <ion-item lines="none" (click)="navigate('/hebergement', 2)" detail="false"
+          <ion-item lines="none" (click)="navigate('/top-deal', 2)" detail="false"
             [class.selected]="selectedIndex == 2">
             <ion-icon name="bag-outline" class="iconColor"></ion-icon>New Collections
           </ion-item>
@@ -53,13 +53,13 @@
           </ion-item>
         </ion-menu-toggle>
             <ion-menu-toggle auto-hide="false">
-          <ion-item lines="none" (click)="navigate('/tabs/tab3')" detail="false"
+          <ion-item lines="none" detail="false"
             [class.selected]="selectedIndex == 5">
             <ion-icon name="call-outline"></ion-icon>Call center
           </ion-item>
         </ion-menu-toggle>
         <ion-menu-toggle auto-hide="false">
-          <ion-item style="padding-top: 2em;" (click)="logout()">
+          <ion-item style="padding-top: 2em;">
             <ion-icon name="log-out-outline"></ion-icon>Logout
           </ion-item>
         </ion-menu-toggle>
